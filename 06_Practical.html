@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical No 6</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
+    <div>
+        <h1>Practical NO. 6</h1>
+        <h3>Marks Calculator</h3>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>SUBJECTS</th>
+                <th>MARKS</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DMGT</td>
+                <td><input type="number" id="s1" placeholder="Enter Marks"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ED</td>
+                <td><input type="number" id="s2" placeholder="Enter Marks"></td>
+            </tr>
+             <tr>
+                <td>3</td>
+                <td>CAO</td>
+                <td><input type="number" id="s3" placeholder="Enter Marks"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>ES</td>
+                <td><input type="number" id="s4" placeholder="Enter Marks"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>MDM</td>
+                <td><input type="number" id="s5" placeholder="Enter Marks"></td>
+            </tr>
+            
+            
+
+            <tr>
+                <td colspan="3" align="center" >
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4rounded" onclick="calc()">Calculate </button>
+                </td>
+            </tr>
+        </table>
+        <h1>TOTAL MARKS</h1>
+        <h1 id="totalMarks"></h1>
+        <br><br>
+        <h3>Percent</h3>
+        <h3 id="percent"></h3>
+        <br><br>
+        <h3>GRADE</h3>
+        <h3 id="grade"></h3>
+        <br><br>
+        <script>function calc(){
+            let sub1 = Number(document.getElementById("s1").value);
+            let sub2 = Number(document.getElementById("s2").value);
+            let sub3 = Number(document.getElementById("s3").value);
+            let sub4 = Number(document.getElementById("s4").value);
+            let sub5 = Number(document.getElementById("s5").value);
+            
+            let Grade = null;
+            let total = sub1 + sub2 + sub3 + sub4 + sub5;
+            let per = (total/500)*100;
+            if(per >= 75)
+        {
+          Grade = "A";
+        }
+        else if(per >= 65 && per <= 75)
+        {
+         Grade = "B";
+        }
+        document.getElementById("totalMarks").innerHTML = total;
+        document.getElementById("percent").innerHTML = per;
+        document.getElementById("grade").innerHTML = Grade;
+        
+        }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Anushka Da Dhaba - Restaurant Menu</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50 text-stone-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+
+      <a href="#" class="text-2xl font-bold tracking-wide text-amber-700">
+        ANUSHKA DA DHABA
+      </a>
+
+      <nav class="hidden gap-8 text-sm font-medium md:flex">
+        <a href="#starters" class="transition hover:text-amber-600">Starters</a>
+        <a href="#mains" class="transition hover:text-amber-600">Main Course</a>
+        <a href="#desserts" class="transition hover:text-amber-600">Desserts</a>
+        <a href="#drinks" class="transition hover:text-amber-600">Drinks</a>
+      </nav>
+
+      <a
+        href="#contact"
+        class="rounded-full bg-amber-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-amber-700"
+      >
+        Reserve
+      </a>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-stone-900">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1800&q=80')] bg-cover bg-center opacity-40"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 py-28 text-center text-white md:py-36">
+
+      <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-amber-400">
+        Welcome to Anushka Da Dhaba
+      </p>
+
+      <h1 class="mx-auto max-w-3xl text-5xl font-bold leading-tight md:text-7xl">
+        Desi food,
+        <span class="text-amber-400">great moments.</span>
+      </h1>
+
+      <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-stone-200 md:text-lg">
+        Fresh ingredients, traditional Indian recipes and authentic
+        dhaba-style flavours. Enjoy delicious food with warm hospitality.
+      </p>
+
+      <a
+        href="#menu"
+        class="mt-8 inline-block rounded-full bg-amber-500 px-7 py-3 font-semibold text-white transition hover:bg-amber-600"
+      >
+        Explore Menu
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Menu -->
+  <main id="menu" class="mx-auto max-w-7xl px-6 py-20">
+
+    <!-- Section Heading -->
+    <div class="mx-auto mb-16 max-w-2xl text-center">
+
+      <p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-600">
+        Our Menu
+      </p>
+
+      <h2 class="mt-3 text-4xl font-bold text-stone-900 md:text-5xl">
+        Made with love
+      </h2>
+
+      <p class="mt-4 text-stone-500">
+        Delicious Indian food prepared with fresh ingredients and authentic spices.
+      </p>
+    </div>
+
+
+    <!-- Starters -->
+    <section id="starters" class="mb-20">
+
+      <div class="mb-8 flex items-end justify-between border-b border-stone-200 pb-4">
+
+        <div>
+          <p class="text-sm font-medium text-amber-600">01</p>
+          <h3 class="mt-1 text-3xl font-bold text-stone-900">Starters</h3>
+        </div>
+
+        <span class="hidden text-sm text-stone-400 sm:block">
+          Start with something delicious
+        </span>
+
+      </div>
+
+
+      <div class="grid gap-6 md:grid-cols-2">
+
+        <!-- Item -->
+        <article class="group rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <div class="flex gap-5">
+
+            <img
+              src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=300&q=80"
+              alt="Paneer Tikka"
+              class="h-24 w-24 rounded-xl object-cover"
+            />
+
+            <div class="flex-1">
+
+              <div class="flex justify-between gap-4">
+
+                <h4 class="font-bold text-stone-900">
+                  Paneer Tikka
+                </h4>
+
+                <span class="font-bold text-amber-600">₹180</span>
+
+              </div>
+
+              <p class="mt-2 text-sm leading-6 text-stone-500">
+                Soft paneer cubes marinated with Indian spices and grilled to perfection.
+              </p>
+
+            </div>
+          </div>
+        </article>
+
+
+        <article class="group rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <div class="flex gap-5">
+
+            <img
+              src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=300&q=80"
+              alt="Samosa"
+              class="h-24 w-24 rounded-xl object-cover"
+            />
+
+            <div class="flex-1">
+
+              <div class="flex justify-between gap-4">
+
+                <h4 class="font-bold text-stone-900">
+                  Crispy Samosa
+                </h4>
+
+                <span class="font-bold text-amber-600">₹60</span>
+
+              </div>
+
+              <p class="mt-2 text-sm leading-6 text-stone-500">
+                Crispy golden samosas filled with spicy potato and peas.
+              </p>
+
+            </div>
+          </div>
+        </article>
+
+
+        <article class="group rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <div class="flex gap-5">
+
+            <img
+              src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=300&q=80"
+              alt="Pakora"
+              class="h-24 w-24 rounded-xl object-cover"
+            />
+
+            <div class="flex-1">
+
+              <div class="flex justify-between gap-4">
+
+                <h4 class="font-bold text-stone-900">
+                  Mix Veg Pakora
+                </h4>
+
+                <span class="font-bold text-amber-600">₹100</span>
+
+              </div>
+
+              <p class="mt-2 text-sm leading-6 text-stone-500">
+                Crispy vegetable fritters served hot with green chutney.
+              </p>
+
+            </div>
+          </div>
+        </article>
+
+
+        <article class="group rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <div class="flex gap-5">
+
+            <img
+              src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=300&q=80"
+              alt="Aloo Tikki"
+              class="h-24 w-24 rounded-xl object-cover"
+            />
+
+            <div class="flex-1">
+
+              <div class="flex justify-between gap-4">
+
+                <h4 class="font-bold text-stone-900">
+                  Aloo Tikki
+                </h4>
+
+                <span class="font-bold text-amber-600">₹80</span>
+
+              </div>
+
+              <p class="mt-2 text-sm leading-6 text-stone-500">
+                Spiced potato patties served with tangy chutneys and fresh toppings.
+              </p>
+
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- Main Course -->
+    <section id="mains" class="mb-20">
+
+      <div class="mb-8 flex items-end justify-between border-b border-stone-200 pb-4">
+
+        <div>
+          <p class="text-sm font-medium text-amber-600">02</p>
+          <h3 class="mt-1 text-3xl font-bold text-stone-900">
+            Main Course
+          </h3>
+        </div>
+
+        <span class="hidden text-sm text-stone-400 sm:block">
+          Our signature dishes
+        </span>
+
+      </div>
+
+
+      <div class="grid gap-6 md:grid-cols-2">
+
+
+        <article class="overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <img
+            src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80"
+            alt="Paneer Butter Masala"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="p-6">
+
+            <div class="flex justify-between gap-4">
+
+              <h4 class="text-xl font-bold text-stone-900">
+                Paneer Butter Masala
+              </h4>
+
+              <span class="font-bold text-amber-600">₹220</span>
+
+            </div>
+
+            <p class="mt-3 text-sm leading-6 text-stone-500">
+              Soft paneer cooked in a rich, creamy tomato gravy with aromatic spices.
+            </p>
+
+            <span class="mt-4 inline-block rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700">
+              Chef's Special
+            </span>
+
+          </div>
+        </article>
+
+
+        <article class="overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <img
+            src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80"
+            alt="Dal Tadka"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="p-6">
+
+            <div class="flex justify-between gap-4">
+
+              <h4 class="text-xl font-bold text-stone-900">
+                Dal Tadka
+              </h4>
+
+              <span class="font-bold text-amber-600">₹140</span>
+
+            </div>
+
+            <p class="mt-3 text-sm leading-6 text-stone-500">
+              Yellow dal cooked with tomatoes, garlic, cumin and traditional spices.
+            </p>
+
+          </div>
+        </article>
+
+
+        <article class="overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <img
+            src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80"
+            alt="Veg Biryani"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="p-6">
+
+            <div class="flex justify-between gap-4">
+
+              <h4 class="text-xl font-bold text-stone-900">
+                Veg Biryani
+              </h4>
+
+              <span class="font-bold text-amber-600">₹180</span>
+
+            </div>
+
+            <p class="mt-3 text-sm leading-6 text-stone-500">
+              Fragrant basmati rice cooked with vegetables, herbs and aromatic spices.
+            </p>
+
+          </div>
+        </article>
+
+
+        <article class="overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <img
+            src="https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=800&q=80"
+            alt="Dal Makhani"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="p-6">
+
+            <div class="flex justify-between gap-4">
+
+              <h4 class="text-xl font-bold text-stone-900">
+                Dal Makhani
+              </h4>
+
+              <span class="font-bold text-amber-600">₹190</span>
+
+            </div>
+
+            <p class="mt-3 text-sm leading-6 text-stone-500">
+              Slow-cooked black lentils finished with butter, cream and rich spices.
+            </p>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- Desserts -->
+    <section id="desserts" class="mb-20">
+
+      <div class="mb-8 border-b border-stone-200 pb-4">
+
+        <p class="text-sm font-medium text-amber-600">03</p>
+
+        <h3 class="mt-1 text-3xl font-bold text-stone-900">
+          Desserts
+        </h3>
+
+      </div>
+
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+
+        <article class="rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <div class="mb-5 text-4xl">🍮</div>
+
+          <div class="flex justify-between">
+
+            <h4 class="font-bold">
+              Gulab Jamun
+            </h4>
+
+            <span class="font-bold text-amber-600">
+              ₹80
+            </span>
+
+          </div>
+
+          <p class="mt-3 text-sm leading-6 text-stone-500">
+            Soft and warm gulab jamuns served in sweet sugar syrup.
+          </p>
+
+        </article>
+
+
+        <article class="rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <div class="mb-5 text-4xl">🍨</div>
+
+          <div class="flex justify-between">
+
+            <h4 class="font-bold">
+              Kulfi
+            </h4>
+
+            <span class="font-bold text-amber-600">
+              ₹70
+            </span>
+
+          </div>
+
+          <p class="mt-3 text-sm leading-6 text-stone-500">
+            Traditional creamy Indian kulfi with rich milk and dry fruits.
+          </p>
+
+        </article>
+
+
+        <article class="rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+          <div class="mb-5 text-4xl">🥛</div>
+
+          <div class="flex justify-between">
+
+            <h4 class="font-bold">
+              Shahi Rabdi
+            </h4>
+
+            <span class="font-bold text-amber-600">
+              ₹100
+            </span>
+
+          </div>
+
+          <p class="mt-3 text-sm leading-6 text-stone-500">
+            Thickened sweet milk flavoured with cardamom and dry fruits.
+          </p>
+
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- Drinks -->
+    <section id="drinks">
+
+      <div class="mb-8 border-b border-stone-200 pb-4">
+
+        <p class="text-sm font-medium text-amber-600">04</p>
+
+        <h3 class="mt-1 text-3xl font-bold text-stone-900">
+          Drinks
+        </h3>
+
+      </div>
+
+
+      <div class="grid gap-x-10 md:grid-cols-2">
+
+
+        <div class="border-b border-stone-200 py-5">
+
+          <div class="flex justify-between">
+
+            <h4 class="font-semibold">
+              Masala Chai
+            </h4>
+
+            <span class="font-bold text-amber-600">
+              ₹40
+            </span>
+
+          </div>
+
+          <p class="mt-1 text-sm text-stone-500">
+            Hot Indian tea prepared with milk and aromatic spices.
+          </p>
+
+        </div>
+
+
+        <div class="border-b border-stone-200 py-5">
+
+          <div class="flex justify-between">
+
+            <h4 class="font-semibold">
+              Sweet Lassi
+            </h4>
+
+            <span class="font-bold text-amber-600">
+              ₹80
+            </span>
+
+          </div>
+
+          <p class="mt-1 text-sm text-stone-500">
+            Thick and refreshing yogurt-based traditional drink.
+          </p>
+
+        </div>
+
+
+        <div class="border-b border-stone-200 py-5">
+
+          <div class="flex justify-between">
+
+            <h4 class="font-semibold">
+              Fresh Lime Soda
+            </h4>
+
+            <span class="font-bold text-amber-600">
+              ₹60
+            </span>
+
+          </div>
+
+          <p class="mt-1 text-sm text-stone-500">
+            Refreshing lime drink served chilled with sparkling soda.
+          </p>
+
+        </div>
+
+
+        <div class="border-b border-stone-200 py-5">
+
+          <div class="flex justify-between">
+
+            <h4 class="font-semibold">
+              Mango Lassi
+            </h4>
+
+            <span class="font-bold text-amber-600">
+              ₹100
+            </span>
+
+          </div>
+
+          <p class="mt-1 text-sm text-stone-500">
+            Creamy yogurt blended with sweet and fresh mango.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Reservation CTA -->
+  <section id="contact" class="bg-amber-600">
+
+    <div class="mx-auto max-w-5xl px-6 py-16 text-center text-white">
+
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-amber-100">
+        Visit Us
+      </p>
+
+      <h2 class="mt-3 text-4xl font-bold md:text-5xl">
+        Make your evening special
+      </h2>
+
+      <p class="mx-auto mt-4 max-w-xl text-amber-50">
+        Enjoy delicious food, traditional flavours, warm hospitality and memorable moments at Anushka Da Dhaba.
+      </p>
+
+      <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+
+        <a
+          href="tel:+919876543210"
+          class="rounded-full bg-white px-7 py-3 font-semibold text-amber-700 transition hover:bg-amber-50"
+        >
+          Call to Reserve
+        </a>
+
+        <a
+          href="mailto:anushkadadhaba@gmail.com"
+          class="rounded-full border border-white px-7 py-3 font-semibold text-white transition hover:bg-white/10"
+        >
+          Email Us
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 text-stone-400">
+
+    <div class="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-3">
+
+
+      <div>
+
+        <h3 class="text-xl font-bold text-white">
+          Anushka Da Dhaba
+        </h3>
+
+        <p class="mt-3 text-sm leading-6">
+          Authentic Indian food, traditional flavours and memorable dining experiences.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4 class="font-semibold text-white">
+          Opening Hours
+        </h4>
+
+        <div class="mt-3 space-y-2 text-sm">
+
+          <p>
+            Monday – Friday: 11:00 AM – 10:00 PM
+          </p>
+
+          <p>
+            Saturday – Sunday: 10:00 AM – 11:00 PM
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h4 class="font-semibold text-white">
+          Contact
+        </h4>
+
+        <div class="mt-3 space-y-2 text-sm">
+
+          <p>
+            Main Road, Nagpur
+          </p>
+
+          <p>
+            +91 98765 43210
+          </p>
+
+          <p>
+            anushkadadhaba@gmail.com
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="border-t border-stone-800 py-5 text-center text-xs">
+      © 2026 Anushka Da Dhaba. All rights reserved.
+    </div>
+
+  </footer>
+
+</body>
+</html>
